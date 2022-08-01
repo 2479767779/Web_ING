@@ -1,0 +1,26 @@
+#搜索引擎
+
+
+import re
+import os
+import sys
+import time
+import urllib.request
+import urllib.parse
+import urllib.error
+import http.client
+import http.cookiejar
+import http.client
+
+
+# 定义一个类，用于存储百度搜索结果
+class BaiduResult:
+    def __init__(self, title, url):
+        self.title = title
+        self.url = url
+
+    def __str__(self):
+        return self.title + '\n' + self.url
+
+
+
